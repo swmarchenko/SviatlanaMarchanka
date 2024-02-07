@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Формы в HTML</title>
+</head>
+
+<body>
+    <p><em>Рекомендации к выполнению работы:</em></p>
+    <ul>
+        <li>
+            <em>Все эти формы размещены в таблице, шириной 700px, 4 строки х 2 столбца
+
+            </em>
+        </li>
+        <li>
+            <em>
+                Каждая форма должна правильно заполненные атрибуты name, method и action.
+            </em>
+        </li>
+        <li>
+            <em>Для атрибута action, воспользуйтесь значением "http://sc.it-academy.by/fe/form.php" - небольшой
+                скрипт показывающий переменные переданные методами post и get.
+            </em>
+        </li>
+    </ul>
+    <table width="700px" border="0">
+        <tr>
+            <td>
+                <h4>Простая форма поиска с вариантами:</h4>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post"></form>
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <label>
+                        <input type="text" autofocus>
+                        <input type="button" value="искать">
+                        <br>
+                        <input type="radio" name="radio" value="на сайте">на сайте
+                        <input type="radio" name="radio" value="в google">в google
+                        <p><em>Длина запроса не более 10 символов</em></p>
+                    </label>
+                </fieldset>
+            </td>
+        <tr>
+            <td>
+                <h4>Простая форма авторизации:</h4>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post"></form>
+                <fieldset>
+                    <legend>Авторизируйтесь</legend>
+                    <label for="login">
+                        <input type="text" id="login" name="login" autofocus>* Логин
+                    </label>
+                    <br>
+                    <label for="pass">
+                        <input type="text" id="password" name="pass" autofocus>* Пароль
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="check" id="check1"> Оставаться в системе
+                        <br>
+                        <input type="button" value="войти">
+                        <br>
+                        <p><em>*- Обязательное поле</em></p>
+                    </label>
+        </tr>
+        </fieldset>
+        </td>
+        <tr>
+            <td>
+                <h4>Отзыв:</h4>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post"></form>
+                <fieldset>
+                    <legend>Оставьте Ваш отзыв</legend>
+                    <label for="login">
+                    <input type="text">* Имя
+                    <br>
+                    <input type="email"pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">* e-mail
+                    <br>
+                    <textarea name="text_area"lang="ru">Форма отправки</textarea>
+                    <br>
+                    <input type="button" value="отправить">
+                    <br>
+                    <p><em>* - обязательное поле 
+                        <br>поле email - с проверкой  
+                        <br>метод POST</em></p>
+
+            </td>
+        </tr>
+
+    </table>
+
+</body>

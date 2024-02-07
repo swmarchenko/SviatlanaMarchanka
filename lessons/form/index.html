@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+          </head>
+    <body>
+        <p>
+            <h1>Форма заявки на работу в зоопарке</h1>
+                <em>Пожалуйста, заполните форму. Обязательные поля помечены *</em>
+        </p>
+        <form action="http://fe.it-academy.by/TestForm.php" method="post">
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <label>
+                    Имя *     
+                    <input type="text">
+                </label>
+                <br>
+                <label>
+                    Телефон
+                    <input type="tel" pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$">
+                </label>
+                <br>
+                <label>
+                    Email *
+                    <input type="email" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Персональная информация</legend>
+                <label>
+                    Возраст *
+                    <input type="number" min="18" max="60">
+                </label>
+                <br>
+                <label>
+                    Пол
+                    <select name="list">
+                        <option value="1">Женщина</option>
+                        <option value="2">Мужчина</option>
+                    </select>
+                </label>
+                <br>
+                <label>
+                    Перечислите личные качества
+                    <textarea name="text_area"></textarea>
+                </label>
+                <fieldset>
+                    <legend>Выберите ваших любимых животных</legend>
+                    <label>
+                        <input type="checkbox" name="val_1"
+                        id="checkbox1" checked>Зебра
+                    </label>
+                    <label>
+                        <input type="checkbox" name="val_2"
+                        id="checkbox1" checked>Кошак
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="val_3"
+                        id="checkbox1" checked>Слон
+                    </label>
+                    <label>
+                        <input type="checkbox" name="val_4"
+                        id="checkbox1" checked>Антилопа
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="val_5"
+                        id="checkbox1" checked>Анаконда
+                    </label>
+                    <label>
+                        <input type="checkbox" name="val_6"
+                        id="checkbox1" checked>Человек
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="val_7"
+                        id="checkbox1" checked>Голубь
+                    </label>
+                    <label>
+                        <input type="checkbox" name="val_8"
+                        id="checkbox1" checked>Краб
+                    </label>
+                    <br>
+                </fieldset> 
+                <input type="submit" value="Отправить информацию">
+        </form>
+    </body>
